@@ -1,5 +1,3 @@
-SupportXml
-
 1. Зайти в папку - 'build_index_file', сгенерировать index.html файл подав на вход xml файл.
 Например: Support.Core.exe devops_sup.xml 
 
