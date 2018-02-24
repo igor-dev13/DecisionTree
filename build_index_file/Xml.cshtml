@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Support Xml Helper</title>
+    <title>Support DecisionTree</title>
     <link href="src\style.css" rel="stylesheet" type="text/css"/>
     <script src="src\jquery.js"></script>
     <script src="src\main.js"></script>
@@ -21,6 +21,13 @@
                     {
                         <div class="node__link">
                             <a class="node__link-title" target="_blank" href="@node.Link">Открыть внешнюю ссылку</a>
+                        </div>
+                    }
+
+                    @if (node.Label.Length > 0)
+                    {
+                        <div class="node__label">
+                            Solution ID: <span class="node__label-title">@node.Label</span>
                         </div>
                     }
                     <div class="node__btn-block clearfix">
